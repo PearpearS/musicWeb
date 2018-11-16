@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发现音乐</title>
+	<link rel="shortcut icon" href="img/音乐.png">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+	<script type="text/javascript" src="jquery.fullPage.min.js"></script>
+	<style type="text/css">
+	p{position: relative; left: -120%;font-family: "Times New Roman", Times, serif;color: #fff;
+		font-size: 22px;}
+	img{position: relative;left: -120%;}
+	.section2 p { position: relative; bottom: -120px;left: 120%;}
+	.img_two_two{position: relative; bottom: -120px;left: 120%;}
+	.img_four{position: relative;left:10px;display: none;}
+	h3{position: relative;left: 200px;}	
+	.img_three_three{position: relative;left: 200px;top: -200px;}
+	</style>
+
+</head>
+<body>
+	<div id="dowebok" class="navigation">
+    <div class="section section1">
+        <p class="p_one">《追光者》的词意真切歌声款款，蕴含着一份单纯的爱意和坚定的承诺</p>
+        <p class="p_two">令人听到纯真，听出故事，就像司夏夫妇之间的感情，有爱的崇拜，却从不卑微</p>
+        <p class="p_three">歌曲干净舒缓，歌词直戳心意，岑宁儿的演唱则唱出一段难言的爱恋</p>
+        <p class="p_four">让人不自觉地陷入对青春往事的回忆之中</p>
+        <img src="img/find_1.jpg" class="img_one">
+		<img src="img/musci-red.png" class="img_two" title="0">
+   	
+    </div>
+    <div class="section section2">       
+        <p class="p_two_one">《当你》由林俊杰作曲送给王心凌的一首别致的歌曲</p>
+        <p class="p_two_two">歌词让人感觉是两个人的感情走到了一个尴尬的境地</p>
+        <p class="p_two_three">在回忆当初暗恋的感觉和爱情刚开始的美好</p>
+        <p class="p_two_four">“如果有一天，我回到从前”，重来会不会有新的结果呢。</p>
+        <img src="img/find_2.jpg" class="img_three">
+        <img src="img/musci-red.png" class="img_two_two" title="1">
+
+    </div>
+    <div class="section section3">
+        <h3>《你不在北京》旋律悲而不伤，沧桑却不失温柔</h3>
+        <h3>曹轩宾将这首歌送给自己，也送给每一个心怀着与心怀过“北京梦”的漂泊者</h3>
+        <h3>希望通过这首歌来表达对这个城市的热爱，对北漂族的鼓励</h3>
+        <img src="img/find_3.jpg" class="img_four">
+        <img src="img/musci-red.png" class="img_three_three" title="2">
+    </div>  
+</div>
+<audio >
+	<source src="">
+</audio>
+	
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript">
+	var flag=true,flag_two=true,flag_three=true;
+	$(function(){
+		var audio=$('audio')[0];
+		$('img[class]').click(function(){
+			if(this.title=='0'){
+				flag_two=true;
+				flag_three=true;
+				if(flag==true){
+				audio.src='audio/岑宁儿 - 追光者1.mp3';				
+				audio.play();
+				flag=false;
+			}else{
+				audio.pause();
+				flag=true;
+			}
+		}
+			if(this.title=='1'){
+				flag=true;
+				flag_three=true;
+				if(flag_two==true){
+				audio.src='audio/林俊杰 - 当你1.mp3';				
+				audio.play();
+				flag_two=false;
+			}else{
+				audio.pause();
+				flag_two=true;
+			}
+		}
+			if(this.title=='2'){
+				flag=true;
+				flag_two=true;
+				if(flag_three==true){
+				audio.src='audio/曹轩宾 - 你不在北京1.mp3';				
+				audio.play();
+				flag_three=false;
+			}else{
+				audio.pause();
+				flag_three=true;
+			}
+		}
+	});
+
+    $('#dowebok').fullpage({
+    	sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+		'navigation': true,
+			afterRender:function(){
+				one();
+			},
+		afterLoad: function(anchorLink, index){
+		if(index=='1'){
+			one();
+		}
+		if(index == '2'){
+			two();
+		}
+		if(index=='3'){
+			three();
+		}
+	},
+			onLeave: function(index, direction){
+				if(index=='1'){
+					$('.section1').find('p').animate({
+						left:'-120%'
+					});
+					$('.section1').find('img').animate({
+					left:'-120%'
+				});
+			}
+			if(index == '2'){
+				$('.section2').find('p').animate({
+					bottom: '-120px',
+					left: '120%'
+				});
+					$('.img_three').animate({
+					left: '-120%'
+				});
+					$('.img_two_two').animate({
+					bottom: '-120px',
+					left: '120%'
+				});
+			}
+			if(index=='3'){
+				$('.img_four').fadeOut();
+			}	
+		}
+	});
+});
+	function one(){
+		$('.img_one').delay(500).animate({
+				left:'0',
+				top:'-100px'
+			});
+			$('.p_one').delay(1500).animate({
+				left:'750px',
+				top:'100px'
+			},1500,'easeOutExpo');
+			$('.p_two').delay(1500).animate({
+				left:'750px',
+				top:'100px'
+			},2000,'easeOutExpo');
+			$('.p_three').delay(1500).animate({
+				left:'750px',
+				top:'100px'
+			},2500,'easeOutExpo');
+			$('.p_four').delay(1500).animate({
+				left:'750px',
+				top:'100px'
+			},3000,'easeOutExpo');
+			$('.img_two').delay(1500).animate({
+				left:'350px',
+				top:'-200px'
+			},3500,'easeOutExpo');
+}
+			function two(){	
+				$('.img_three').delay(500).animate({
+				left:'320px',
+				top:'-70px'
+			});
+				$('.p_two_one').delay(1500).animate({
+					left: '750px',
+					buttom:'200px'
+				}, 1500, 'easeOutExpo');
+				$('.p_two_two').delay(1500).animate({
+					left: '750px',
+					buttom:'200px'
+				}, 2500, 'easeOutExpo');
+				$('.p_two_three').delay(1500).animate({
+					left: '750px',
+					buttom:'200px'
+				}, 3000, 'easeOutExpo');
+				$('.p_two_four').delay(1500).animate({
+					left: '750px',
+					buttom:'200px'
+				}, 3500, 'easeOutExpo');
+				$('.img_two_two').delay(1500).animate({
+					left:'550px',
+					top:'-300px'
+				}, 3500, 'easeOutExpo');
+			}
+		function three(){
+			$('.img_four').delay(500).fadeIn(2000);
+	}
+</script>
+</body>
+</html>

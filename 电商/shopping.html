@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>买买买</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="shortcut icon" href="img/电商.png">
+	<link rel="stylesheet" type="text/css" href="shopping.css">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="demo.js"></script>
+</head>
+<body>
+	<div id="header" class="gradient">
+		<p class="city">
+			切换城市
+			<a href="#" class="active">北京</a>
+			<a href="#">上海</a>
+			<a href="#">广州</a>
+			<a href="#">深圳</a>
+		</p>
+		
+		<p class="link">
+			<img src="img/加盟商码.png">
+			<a href="#">加盟买买买</a> |
+			<img src="img/店铺.png">
+			<a href="#">店铺管理</a>
+		</p>
+	</div>
+
+	<div id="nav">
+		<ul class="nav_1">
+			<li><img src="img/美食.png"><a href="#">美食</a></li>
+			<li><img src="img/_唱歌.png"><a href="#">夜店</a></li>
+			<li><img src="img/购物.png"><a href="#">购物</a></li>
+			<li><img src="img/文化.png"><a href="#">文化</a></li>
+			<li><img src="img/休闲.png"><a href="#">休闲</a></li>
+		</ul>
+		<h1>
+			<a href="#"><img src="img/logo.png" alt="买买买，不买不是人" class="logo"></a>
+		</h1>
+		<ul class="nav_2">
+			<li><img src="img/QQ空间.png"><a href="#">烧客空间</a></li>
+			<li><img src="img/知识.png"><a href="#">知识分子</a></li>
+			<li><img src="img/吃饭 2600%.png"><a href="#">白吃白拿</a></li>
+			<li><img src="img/论坛.png"><a href="#">烧客论坛</a></li>
+			<li><img src="img/会员俱乐部.png"><a href="#">俱乐部</a></li>
+		</ul>
+	</div>
+
+	<div id="search">
+		<div class="bar">
+			<ul class="menu" id="menu">
+				<li class="active">搜店</li>
+				<li>地址</li>
+				<li>优惠券</li>
+				<li>全文</li>
+				<li>视频</li>
+			</ul>
+		</div>
+		<div class="form">
+			<form action="#">
+				<input type="search" class="search" value="">
+				<input type="submit" value="搜索" class="btn btn-info ">
+			</form>
+		</div>
+		<p class="key_text"><a href="#">胖哥俩、</a><a href="#">海底捞、</a><a href="#">网鱼、</a><a href="#">大渝火锅、</a>
+			<a href="#">小肥羊、</a><a href="#">风雷烧烤、</a><a href="#">小笼馒头...</a></p>
+			<div class="img"></div>
+
+			<div class="update">
+				<div class="wrap">
+					<ul>
+						<li><a href="#"><strong>梨啊梨 </strong><span>8分钟前 </span>免费得到一本书</a></li>					
+					</ul>
+				</div>
+				<a href="#" class="triangle_up" id="updateUpbtn"></a>
+				<a href="#" class="triangle_down_red" id="updateDownbtn"></a>
+			</div>
+	</div>
+
+	<div class="content clear">
+		<div class="main fl"><!-- 左边 -->
+			<div class="clear">
+				<div class="section fl">
+					<h2 class="video_title">WHAT,HOT!</h2>
+					<div class="video"><img src="img/play_bg.gif"></div>
+					<ul class="video_list">
+						<li><a href="#">OMG!李先生一块钱抢到了</a></li>
+						<li><a href="#">震惊！世界上最大的蟒蛇竟然</a></li>
+						<li><a href="#">恐怖！人类最大的敌人？</a></li>
+					</ul>
+
+
+				</div>
+				<div class="options fr">
+					<ul class="nav tabNav1">
+						<li class="active fl">
+							<strong>HOT SHOP<span>红店铺</span></strong>
+							<a href="#" class="triangle_down_red"></a>
+						</li>
+						<li class="gradient fr">
+							<strong>EW SHOP<span>新开张</span></strong>
+							<a href="#" class="triangle_down_gray"></a>
+						</li>
+					</ul>
+					<div class="con">
+						<div class="hot_list">
+						<ul class="tabCon1">
+							<li>
+								<div class="img"><a href="#"><img src="img/content/鸡翅膀完成.png"></a></div>
+								<div class="text">
+									<h3><a href="#">胖哥俩</a></h3>
+									<p>
+										地址：梁溪区清扬路128号茂业天地购物中心F5<br/>
+										人均：99元<br/>
+										人气：999
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><a href="#"><img src="img/content/小肥羊完成.png"></a></div>
+								<div class="text">
+									<h3><a href="#">小肥羊</a></h3>
+									<p>
+										地址：万达商业街广场3楼3021-3023号<br/>
+										人均：83元<br/>
+										人气：999
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><a href="#"><img src="img/content/风雷烧烤.png"></a></div>
+								<div class="text">
+									<h3><a href="#">风雷烧烤</a></h3>
+									<p>
+										地址：新区叙康里路口<br/>
+										人均：99元<br/>
+										人气：999
+									</p>
+								</div>
+							</li>
+							
+						</ul>
+
+						<!-- 第二个选项卡 --><ul class="tabCon1">
+							<li>
+								<div class="img"><a href="#"><img src="img/大渝火锅.png"></a></div>
+								<div class="text">
+									<h3><a href="#">大渝火锅</a></h3>
+									<p>
+										地址：未知<br/>
+										人均：99元<br/>
+										人气：999
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><a href="#"><img src="img/玉兰饼.png"></a></div>
+								<div class="text">
+									<h3><a href="#">玉兰饼</a></h3>
+									<p>
+										地址：未知<br/>
+										人均：2.5元<br/>
+										人气：999
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="img"><a href="#"><img src="img/小笼馒头.png"></a></div>
+								<div class="text">
+									<h3><a href="#">小笼馒头</a></h3>
+									<p>
+										地址：未知<br/>
+										人均：2.5元<br/>
+										人气：999
+									</p>
+								</div>
+							</li>
+							
+						</ul>
+						<a class="more" href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="main_ad "><!-- 广告 -->
+				<a href="#"><img src="ad/ad1.jpg"></a>
+			</div>
+
+			<div class="clear">
+				
+					<div class="activity">
+						<h2 class="new_title"> 
+							<strong>LUCKY YODAY</strong>
+							<span>每日活动</span>
+							<em>2018.2</em>
+						</h2>
+						
+						<div class="con">
+							<div class="info" >
+								<div class="img" style="float: left;margin-left: 24px;padding-top: 28px;">
+									<img src="img/content/今日活动.png">
+								</div>
+								<div class="text">
+									<h3>
+										<em class="gradient">02</em>
+										<em class="gradient">15</em>
+										<span>本日主题：数码科技</span>
+									</h3>
+									<p>MakBook Pro想买吗？那就一起努力赚钱吧</p>
+								</div>
+							</div>
+							<div class="calendar">
+								<h3>
+									<span>MON</span>
+									<span>TUE</span>
+									<span>WED</span>
+									<span>THU</span>
+									<span>FRI</span>
+									<span>SAT</span>
+									<span>SUN</span>
+								</h3>
+								<ol>
+									<li class="normal">28</li>
+									<li class="normal">29</li>
+									<li class="normal">30</li>
+									<li class="normal">31</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3
+									
+									</li>
+									<li>4</li>
+									<li>5
+									</li>
+									<li>6</li>
+									<li>7</li>
+									<li>8</li>
+									<li>9</li>
+									<li>10</li>
+									<li>11</li>
+									<li>12</li>
+									<li>13</li>
+									<li>14</li>
+									<li>
+											<img src="img/content/li-mac.png" class="active">
+									</li>
+									<li>16</li>
+									<li>17</li>
+									<li>18</li>
+									<li>19
+											<img src="img/content/adidas.png" class="img" info="Adidas经典款，值得拥有">
+									</li>
+									<li>20</li>
+									<li>21</li>
+									<li>22</li>
+									<li>
+										<img src="img/开衫.png" class="img" info="各种款型和面料的开衫">
+									</li>
+									<li>24</li>
+									<li>25</li>
+									<li>26</li>
+									<li>27</li>
+									
+								</ol>
+								<div class="today_info" style="display: none;z-index: 3;">
+									<img src="">
+									<div class="text2">
+										<h4><strong>SAT</strong> 本日主题</h4>
+										<p>啦啦啦啦啦啦</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				
+				
+					<div class="recommend">
+						<h2 class="new_title">
+							<strong>RECOMMEND</strong>
+							<span>精彩推荐</span>
+							
+						</h2>
+						<div class="pic">
+							<ul>
+								
+								<li><a href="#"><img src="img/content/天梭.png"></a></li>
+								<li><a href="#"><img src="img/content/百达翡丽.png"></a></li>
+								<li><a href="#"><img src="img/content/DW.png"></a></li>
+							</ul>
+							<ol>
+								
+								<li><a href="javascript:;"><img src="img/content/天梭2.png"></a></li>
+								<li><a href="javascript:;"><img src="img/content/百达翡丽2.png"></a></li>
+								<li><a href="javascript:;"><img src="img/content/DW2.png"></a></li>
+							</ol>
+							<p>丹尼尔惠林顿</p>
+						</div>
+						<div class="list_text" >
+								<ul>
+									<li><img src="img/recommend_list_ico1.gif"><em>|</em><a href="#">老店新开，全场五折<span>2018/2/11</span></a> </li>
+									<li><img src="img/recommend_list_ico2.gif"><em>|</em><a href="#">MacBook Pro大降价啦<span>2018/2/12</span></a> </li>
+									<li><img src="img/recommend_list_ico1.gif"><em>|</em><a href="#">1元抢抢抢！<span>2018/2/13</span></a> </li>
+									<li><img src="img/recommend_list_ico2.gif"><em>|</em><a href="#">新年大转盘，发家致富！<span>2018/2/13</span></a> </li>
+									<li><img src="img/recommend_list_ico1.gif"><em>|</em><a href="#">礼包第二件半价！<span>2018/2/14</span></a> </li>
+									<li><img src="img/recommend_list_ico2.gif"><em>|</em><a href="#">福旺新春！9.9元秒杀<span>2018/2/15</span></a> </li>
+									<li><img src="img/recommend_list_ico1.gif"><em>|</em><a href="#">让孩子爱上阅读，买三免一<span>2018/2/15</span></a> </li>
+									<li><img src="img/recommend_list_ico2.gif"><em>|</em><a href="#">好书直降，秒杀天天<span>2018/2/16</span></a> </li>
+								
+								
+								
+								</ul>
+						</div>
+					</div>
+				
+			</div>
+
+			<div class="clear">
+				<div class="options fl" style="margin-top: 2px;">
+					<ul class="nav tabNav2">
+						<li class="active fl">
+							<strong>SUBWAY<span>地铁交通</span></strong>
+							<a href="#" class="triangle_down_red"></a>
+
+						</li>
+
+						<li class="gradient fr">
+							<strong>MAP<span>生活圈</span></strong>
+							<a href="#" class="triangle_down_gray"></a>
+						</li>
+					</ul>
+					<div class="con" style="border:1px solid #aaa;">
+						<img src="img/地铁.png" style="margin-top: 31px;padding-bottom: 21px;" class="tabCon2">
+						<img src="img/456.jpg" style="margin-top: 31px;padding-bottom: 21px;" class="tabCon2">
+					</div>
+					
+				</div>
+				<div class="section fr" style="margin-top: 4px;">
+					<div class="bbs">
+					<h2 class="main_title">
+					<strong>BBS<span>论坛</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+				</h2>
+				<ol>
+					<li class="active">
+						<strong>01</strong>
+						<img src="img/关羽.png">
+						<a href="#">我是关羽</a>
+						<span>有人来聊天吗</span>
+						<em>ONE</em>
+						<b>聊天聊地</b>
+					</li>
+					<li>
+						<strong>02</strong>
+						<img src="img/张飞.png">
+						<a href="#">我是张飞</a>
+						<span>有人来聊天吗</span>
+						<em>TWO</em>
+						<b>聊天聊地</b>
+					</li>
+					<li>
+						<strong>03</strong>
+						<img src="img/诸葛亮.png">
+						<a href="#">我是诸葛亮</a>
+						<span>有人来聊天吗</span>
+						<em>THREE</em>
+						<b>聊天聊地</b>
+					</li>
+					<li>
+						<strong>04</strong>
+						<img src="img/马超.png">
+						<a href="#">我是马超啊</a>
+						<span>有人来聊天吗</span>
+						<em>FOUR</em>
+						<b>聊天聊地</b>
+					</li>
+					<li>
+						<strong>05</strong>
+						<img src="img/刘峰.png">
+						<a href="#">我是刘峰</a>
+						<span>有人来聊天吗</span>
+						<em>FIVE</em>
+						<b>聊天聊地</b>
+					</li>
+					<li>
+						<strong>06</strong>
+						<img src="img/刘备.png">
+						<a href="#">我是刘备</a>
+						<span>有人来聊天吗</span>
+						<em>SIX</em>
+						<b>聊天聊地</b>
+					</li>
+					<li>
+						<strong>07</strong>
+						<img src="img/刘禅.png">
+						<a href="#">我是刘禅</a>
+						<span>有人来聊天吗</span>
+						<em>SEVEN</em>
+						<b>聊天聊地</b>
+					</li>
+						<li>
+						<strong>08</strong>
+						<img src="img/刘谌.png">
+						<a href="#">我是刘谌</a>
+						<span>有人来聊天吗</span>
+						<em>EIGHT</em>
+						<b>聊天聊地</b>
+					</li>
+				</ol>
+				</div>
+				</div>
+			</div>
+
+			<div class="main_ad"><!-- 广告 -->
+				<a href="#"><img src="ad/ad1.jpg"></a>
+			</div>
+
+			<div class="clear">
+				<div class="section fl">
+					
+					<h2 class="main_title">
+					<strong>SHOP<span>知道分子</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+				</h2>
+					<div class="tab">
+						<ul>
+							<li class="active">有人在问
+								<a href="#" class="triangle_down_red"></a>
+							</li>
+							<li class="gradient">有人知道
+								<a href="#" class="triangle_down_gray"></a>
+							</li>
+							<li class="gradient">热门问题
+								<a href="#" class="triangle_down_gray"></a>
+							</li>
+						</ul>
+					</div>
+
+						<ul class="list_section mysection">
+							<li><a href="#"> <em>[ <span>数码</span> ]</em> 谁用过MacBook pro？感觉怎么样</a></li>
+							<li><a href="#"> <em>[ <span>数码</span> ]</em> 我的小米坏了怎么办</a></li>
+							<li><a href="#"> <em>[ <span>鞋类</span> ]</em> 鞋子如何保养？</a></li>
+							<li><a href="#"> <em>[ <span>活动</span> ]</em> 折扣券在哪里抢？</a></li>
+							<li><a href="#"> <em>[ <span>活动</span> ]</em> 活动是真的吗？</a></li>							
+						</ul>
+						
+						<div class="soso">
+							<form action="#">
+								<strong>搜一下：</strong>
+								<input type="text" class="text">
+								<input type="submit" value="" class="btn">
+							</form>
+						</div>
+
+
+				</div>
+				<div class="section fr">
+					
+					<h2 class="main_title">
+					<strong>SHOP<span>红人烧客</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+				</h2>
+					<div class="hot_area">
+						<ul style="position: relative;">
+							<li><img src="img/content/1.png"></li>
+							<li><img src="img/content/2.png"></li>
+							<li class="area1">
+								<p class="info">
+									用户名：梨啊梨<br/>
+									坐标：无锡<br/>
+									人气：0									
+								</p>
+								<img src="img/content/7.png"></li>
+							<li><img src="img/content/4.png"></li>
+							<li><img src="img/content/5.png"></li>
+							<li><img src="img/content/6.png"></li>
+							<li class="area2"><img src="img/content/8.png"></li>
+							<li style="top: 160px;position: absolute;"><img src="img/content/3.png"></li>
+						
+							<li style="top: 160px;position: absolute;left: 80px;"><img src="img/content/9.png"></li>
+							<li style="top: 160px;position: absolute;left: 160px;"><img src="img/content/10.png"></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="clear">
+				<div class="section fl">
+					<h2 class="main_title">
+					<strong>HELP<span>在线帮助</span></strong>					
+				</h2>
+				<div class="help_top">
+					<p>您有任何问题，都可以通过全国免费电话，或MSN在线客服与我们联系！</p>
+					<div class="help_div1"></div><span>123-123-123</span>
+					<div class="help_div2"></div><span>maimaimai.com</span>
+					<div class="gray_line"></div>
+					<ul class="help_ul1">
+						<li>用户帮助</li>
+						<li>金币是什么</li>
+						<li>怎样查看我的等级</li>
+						<li>怎么赚积分</li>
+					</ul>
+					<ul class="help_ul2">
+						<li>商户帮助</li>
+						<li>如何成为明星商户</li>
+						<li>邮件推广</li>
+						<li>论坛推广方法</li>
+					</ul>
+				</div>
+				</div>
+				<div class="section fr" >
+					
+					<h2 class="main_title">
+					<strong>SHOP<span>媒体声音</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+					
+				</h2>
+				<div class="media_book">
+				<ul>
+						<li><a href="#"><img src="img/content/media1.gif"></a><p>日本最大的财经杂志《钻石周刊》对100度享乐网的报道</p></li>
+						<li><a href="#"><img src="img/content/media2.gif"></a><p>视频网站买买买获得网络视听许可证</p></li>
+						<li><a href="#"><img src="img/content/media3.gif"></a><p>互联网上的视频橱窗</p></li>
+						<li><a href="#"><img src="img/content/media4.gif"></a><p>享乐主义的机会</p></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+
+		</div>
+
+		<div class="side fr"><!-- 右边 -->
+			<div class="side_section">
+				<div class="gradient">
+				<h2 class="main_title ">
+					<strong>LOAD<span>登录</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+				</h2>
+			</div>
+			<div>
+				<form class="login">
+					用户名 <input type="text" class="text">
+					<input type="checkbox" style="margin-left: 8px;">记住我<br/>
+					<span>密   码 </span><input type="password" class="password">
+					<input type="submit" value="登录" style="margin-left: 8px;width: 57px;height: 25px;">
+				</form>
+			</div>
+			<div class="zhuce">
+				
+			</div>
+			<div class="misspass">
+			<a href="#"><img src="img/dot.gif" class="img1">新用户注册</a>
+			<a href="#"><img src="img/dot.gif" class="img2">忘记密码</a>
+		</div>
+			</div>
+			<div class="ad_border">
+				<a href="#"><img src="ad/ad2.jpg"></a>
+			</div>
+			<div class="side_ad ">
+					<a href="#"><img src="ad/ad3.jpg"></a>
+			</div>
+			<div class="side_section">
+					<h2 class="main_title">
+					<strong>COUPONS<span>抢抢抢</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+				</h2>
+				<div class="tab">
+						<ul>
+							<li class="active">人气
+								<a href="#" class="triangle_down_red"></a>
+							</li>
+							<li class="gradient">推荐
+								<a href="#" class="triangle_down_gray"></a>
+							</li>
+							<li class="gradient">最新
+								<a href="#" class="triangle_down_gray"></a>
+							</li>
+						</ul>
+					</div>
+
+				
+						<ul class="list_section">
+							<li><a href="#"> MacBook pro</a></li>
+							<li><a href="#"> iphoneX</a></li>
+							<li><a href="#"> 空气清新器</a></li>
+							<li><a href="#"> 小米6</a></li>
+							<li><a href="#"> 超极本</a></li>
+						
+							
+						</ul>
+						
+			
+
+
+			</div>
+			<div class="side_section">
+					<h2 class="main_title">
+					<strong>SHOP<span>今日推荐</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+				</h2>
+				<div class="wrap_section2">
+					<ul class="pic_list">
+							<li>
+								<div class="img fl"><a href="#"><img src="img/content/MacBook.png"></a></div>
+								<div class="text fr">
+									<h3><a href="#">MacBook Pro</a></h3>
+									<p>										
+										优惠：666元<br/>
+										人气：999
+									</p>
+								</div>
+							</li><li>
+								<div class="img fl"><a href="#"><img src="img/content/css世界.png"></a></div>
+								<div class="text fr">
+									<h3><a href="#">《CSS世界》</a></h3>
+									<p>										
+										优惠：10元<br/>
+										人气：999
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="img fl"><a href="#"><img src="img/content/ES6.png"></a></div>
+								<div class="text fr">
+									<h3><a href="#">《ES6标准入门》</a></h3>
+									<p>										
+										优惠：18元<br/>
+										人气：999
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="img fl"><a href="#"><img src="img/content/锋利的Jquery.png"></a></div>
+								<div class="text fr">
+									<h3><a href="#">《锋利的JQuery》</a></h3>
+									<p>										
+										优惠：12元<br/>
+										人气：999
+									</p>
+								</div>
+							</li>
+							
+						
+							
+						</ul>
+				</div>
+
+
+			</div>
+			<div class="side_section">
+					<h2 class="main_title">
+					<strong>360°SHOP<span>全景逛店</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+				</h2>
+				<ul>
+					<li><img src="img/content/未标题-1.png" style="padding-bottom: 8px;width: 214px;height: 110px;padding-top: 18px;"></li>
+					<p style="color: #333333;font-size: 14px;padding-bottom: 10px;">精挑优质店铺</p>
+				</ul>
+			</div>
+			<div class="side_section">
+				
+					<h2 class="main_title">
+					<strong>SHOP<span>折扣店</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+				</h2>
+				<ul class="pic_list">
+							<li>
+								<div class="img fl"><a href="#"><img src="img/content/css权威指南.png"></a></div>
+								<div class="text fr">
+									<h3><a href="#">《CSS权威指南》</a></h3>
+									<p>										
+										优惠：8元<br/>
+										人气：999
+									</p>
+								</div>
+							</li></ul>
+
+						<ul class="list_section">
+							<li><a href="#"> <em>【</em><span>书籍</span><em>】</em>《JavaScript程序设计》</a></li>
+							<li><a href="#"> <em>【</em><span>数码</span><em>】</em> MacBook Pro</a></li>
+							<li><a href="#"> <em>【</em><span>家居</span><em>】</em> 多功能写字桌</a></li>
+							<li><a href="#"> <em>【</em><span>鞋类</span><em>】</em> 经典款Adidas</a></li>
+							<li><a href="#"> <em>【</em><span>书籍</span><em>】</em>《HTML5+CSS3》</a></li>
+							<li><a href="#"> <em>【</em><span>零食</span><em>】</em> 乐事原味经典</a></li>
+							<li><a href="#"> <em>【</em><span>男装</span><em>】</em> 连帽卫衣</a></li>
+							<li><a href="#"> <em>【</em><span>女装</span><em>】</em> 女式毛针织衫</a></li>
+							
+						</ul>
+			</div>
+			<div class="side_section" style="padding-bottom: 12px;">
+					<h2 class="main_title">
+					<strong>COUPONS<span>最新联盟</span></strong>
+					<a href="#"><img src="img/more.gif" alt="更多" title="更多"></a>
+				</h2><div style="overflow: hidden;">
+				<div class="fl" style="width: 107px;"><ul class="pic_list">
+							<li>
+								<div class="img "><a href="#"><img src="img/content/疯狂烤翅.png"></a></div>
+								<div class="text ">
+									<h3><a href="#">疯狂烤翅</a></h3>
+									<p>										
+										店名：正新鸡排<br/>
+										人气：999
+									</p>
+								</div>
+							</li></ul></div>
+							<div class="fr" style="width: 107px;"><ul class="pic_list">
+							<li>
+								<div class="img"><a href="#"><img src="img/content/四季如春.png"></a></div>
+								<div class="text ">
+									<h3><a href="#">四季如春</a></h3>
+									<p>										
+										店名：一点点奶茶<br/>
+										人气：999
+									</p>
+								</div>
+							</li></ul></div></div>
+					<ul class="list_section">
+							<li><a href="#">加入我们吧——正新鸡排</a></li>
+							<li><a href="#">加入我们吧——豪大大鸡排</a></li>
+							<li><a href="#">加入我们吧——COCO</a></li>
+							<li><a href="#">加入我们吧——阿姨奶茶</a></li>
+							<li><a href="#">加入我们吧——喜茶</a></li>
+							<li><a href="#">加入我们吧——杨国福麻辣烫</a></li>
+							<li><a href="#">加入我们吧——一点点奶茶</a></li>
+							<li><a href="#">加入我们吧——三只松鼠</a></li>
+						
+						
+						
+						</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<a href="#">关于我们</a> |
+		<a href="#">联系我们</a> |
+		<a href="#">版权说明</a> |
+		<a href="#">加入我们</a> |
+		<a href="#">问题反馈</a> |
+		<a href="#">友情链接</a> |
+		<a href="#">网站地图</a> |
+		<a href="#">视频索引</a> <br/>
+		<div>Copyright &copy; 2018 www.maimaimai.com 买买买网 版权所有 </div>
+	</div>
+	
+</body>
+</html>

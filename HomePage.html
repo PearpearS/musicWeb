@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐小屋</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="shortcut icon" href="img/屋子.png">
+</head>
+<body>		
+	<div class="main-wapper">
+	<header>
+		<nav>
+			<ul>
+				<li class="logo"><span class="label label-primary">卞焱栋</span></li>
+				<nav class="nav nav-tabs nav-top">
+					<li role="presentation" class="active"><a href="demo.html">当前主页</a></li>
+					<li role="presentation" ><a href="findsong.html">发现音乐</a></li>
+					<li role="presentation" ><a href="musicCard.html">卡片音乐盒</a></li>
+					<li role="presentation"><a href="jianli.html">屋主介绍</a></li>
+					<div class="form-group">
+						<input class="mySearch" type="search"  placeholder="  搜索...">
+						<span class="glyphicon glyphicon-search text-info"></span>
+						<div style="display: inline;left: 120px;position: relative;">
+						<a href="registered.html">注册  |</a>
+						<a href="registered.html">登录</a></div>
+					</div>		
+				</nav>
+			</ul>			
+		</nav>
+
+		<div id="banner">
+			<div class="inner">
+				<h1 class="text-primary">聆听</h1>
+				<p class="text-info">让音乐缤纷整个世界吧</p>
+				
+				<img src="img/青蛙.gif" class="img-circle" id="guagua">
+
+
+			</div>
+		</div>
+	
+	</header>
+	<div class="content">
+		<section class="green-section">
+		<div class="wrapper">
+			<div>
+				<h1 class="h1_center">音乐小游戏</h1>
+				<div class="hr"></div>
+				<p class="sub-heading"></p>
+			</div>		
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title myFont" id="myModalLabel" >你能猜出是什么歌曲名吗？</h4>
+            </div>
+         <div class="radio radio-inline" >					
+					<input type="radio" name="quest" class="radio_one"><span class="que_one" style="color:#337ab7; font-size: 20px;left: 70px;position: relative;">《风吹的季节》</span ><br>
+					<input type="radio" name="quest" class="radio_one"><span class="que_two" style="color:#337ab7;font-size: 20px;left: 70px;position: relative;">《夏天的风》</span><br>
+					<input type="radio" name="quest" class="radio_one"><span class="que_three" style="color:#337ab7;font-size: 20px;left: 70px;position: relative;">《秋天的不回来》</span><br>
+				</div>
+				<div style="border-radius:180px;width: 200px;height: 200px;background:#fa7d7d;position: absolute;left: 100px;top: 100px;" class="question_ok">
+					<p style="text-align: center;line-height: 200px" class="question_ok_p"></p>
+
+				</div>
+            <div class="modal-footer">
+               <button class="btn btn-info btn-lg"  id="yes">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+			
+			<div  style="box-shadow: 2px 2px 3px black">
+				<div class="panel panel-info">
+					<div class="panel-heading" >
+				<h5>猜猜下面的曲目？</h5></div>				
+				<div class="panel-body">
+					<img src="img/问号.png" class="quest img-circle" name=0 data-toggle="modal" data-target="#myModal">
+					<img src="img/问号.png" class="quest img-circle" name=1 data-toggle="modal" data-target="#myModal">
+					<img src="img/问号.png" class="quest img-circle" name=2 data-toggle="modal" data-target="#myModal">
+					<img src="img/问号.png" class="quest img-circle" name=3 data-toggle="modal" data-target="#myModal">
+					<img src="img/问号.png" class="quest img-circle" name=4 data-toggle="modal" data-target="#myModal">
+					<img src="img/问号.png" class="quest img-circle" name=5 data-toggle="modal" data-target="#myModal">
+				</div>
+			</div>
+			</div>
+		</div>
+		</section>
+		
+		<section class="gray-section">
+			<div class="article-preview">
+				<div class="img-section" >
+					<img src="img/timg (1).jpg" style="height: 398px;">
+				</div>
+			</div>
+			<div class="text-section">
+				<h2 style="font-size: 20px;text-indent: 2em;">  秋刀鱼的滋味，猫跟你都想了解~</h2>
+				 <p class="text-info" style="text-indent: 8em;">从前从前，有个人爱你很久。</p> 
+				<h3 class="text-success">小姐，请问下这里有卖半岛铁盒的吗？</h3>
+				<h4 class="text-warning">你就是海滩下的那乌克丽丽~</h4>
+				<h5 class="text-danger">刮风这天我试过握着你手</h5>
+<img src="img/musci-red.png" class="music music_two" title=2>
+<img src="img/cat.jpg" class="img-circle myLove">
+			</div><!--第一张图-->	
+		</section>
+
+		<section class="purple-section">
+		<div class="heading-wrapper">
+			
+			<div class="hr"></div>
+			<div class="sub-heading">
+				<div class="card">
+					<img src="img/syz2.jpg" class="picture">					
+					<p><strong>孙燕姿</strong>(Stefanie Sun），1978年7月23日出生于新加坡，华语流行女歌手。      									推荐歌曲：《我怀念的》、《遇见》
+				</p>
+				<img class="music musci_three"  src="img/musci-red.png" title=3>
+				</div>
+				<div class="card">
+					<img src="img/b812c8fcc3cec3fdfc47590bd688d43f87942756.jpg"  class="picture">
+					<p class="two" style="position: absolute;top: 0px;left: 220px;"><strong>方大同</strong>（Khalil Fong），1983年7月14日出生于美国夏威夷，香港男歌手。     									推荐歌曲：《特别的人》、《红豆》
+				</p>
+					<img class="music musci_three"  src="img/musci-red.png" title=4>
+				</div>
+				<div class="card">
+					<img src="img/qtdz.jpg"   class="picture">
+					<p><strong>前田敦子</strong>，昵称“あっちゃん”（阿酱）。1991年7月10日出生于千叶县。     									        推荐歌曲：《君は仆だ》
+				</p>
+					<img class="music musci_three"  src="img/musci-red.png" title=5>
+				</div>
+				<div class="card">
+					<img  src="img/jhx2.jpg"  class="picture">
+					<p><strong>金海心</strong>（Hannah Kim），1978年10月30日出生于北京市，中国内地流行乐女歌手、音乐制作人、主持人、配音演员。     									推荐歌曲：《阳光下的星星》、《那么骄傲》
+				</p>
+					<img class="music musci_three"  src="img/musci-red.png" title=6>
+				</div>
+
+				<div class="card">
+					<img  src="img/zhang.jpg"  class="picture">
+					<p class="zhangzhenyue"><strong>张震岳</strong>，1974年5月2日出生，中国台湾     男歌手。
+1993年12月，张震岳发行第一张专辑《就是喜欢你》[1]  。1994年6月行张震岳第二张专辑《花开了没有》.
+				</p>
+					<img class="music musci_three"  src="img/musci-red.png" title=7>
+				</div>
+
+				<div class="card">
+					<img  src="img/fish.png"  class="picture">
+					<p> <strong>《城镇青年》</strong>由岩井俊二导演的动画电影
+				</p>
+					<img class="music musci_three"  src="img/musci-red.png" title=8>
+				</div>
+			</div>
+		</div>	
+		</section>
+
+		<audio id="audio" autoplay>
+			<source  src="audio/bgm.mp3">
+		</audio>
+<!-- onclick="this.play()" -->
+	</div>
+	<!-- <video  class="myMoveVideo" >
+		<source src="video/周杰伦 - 七里香.mp4" >
+	</video> -->
+	<footer>
+		<ul class="share-group">
+			<li><a href="https://www.jianshu.com/u/aa89ffef82c2" id="myA-one"><img src="img/简书.png" class="img-circle"><span style="display: block;">简书</span></a></li>
+			<li><a href="https://github.com/PearpearS" id="myA-two"><img src="img/github.png"><span style="display: block;">GitHub</span></a></li>
+			
+			<li><a href="https://www.imooc.com/u/3346087" id="myA-three"><img src="img/慕课网.png" class="img-circle"><span style="display: block;">慕课网</span></a></li>
+			<li><a href="http://blog.csdn.net/b703229670" id="myA-four"><img src="img/csdn.png"><span style="display: block;">CSDN</span></a></li>
+			
+		</ul>
+		<div class="copy">
+			&copy 卞焱栋-2017
+		</div>
+<!--  <audio autoplay>
+		<source src="audio/music-one.mp3" >
+	</audio> 
+
+	 ("<audio autoplay><source src="+'audio/music-one.mp3'+" ></audio>") 
+ -->
+	</footer>
+	<div class="snow"></div>
+</div>
+
+
+
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+</body>
+</html>

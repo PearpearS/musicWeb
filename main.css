@@ -1,0 +1,99 @@
+body{margin:0;padding: 0;}
+nav{background-color: #d8d8d8;height:50px;}
+#banner{background-color:transparent;height:500px;}
+nav ul {list-style:none;margin:0;}
+nav ul li{display: inline-block;float: right; line-height: 50px;margin-right: 20px;}
+nav ul li a{line-height: 50px;text-decoration: none;display: inline-block;height:inherit;}
+nav ul li.logo{float: left;}
+#banner{margin:0;}
+#banner .inner{max-width: 300px;text-align: center;margin: 0 auto;position: relative;top: 80px;}
+h1{margin:0;}
+h2{margin:0;}
+#guagua{width: 50px;height: 50px;}
+#guagua:hover{transform: scale(1.5);transition:.3s transform }
+.question_ok{display: none;}
+button{border: 0;background-color: #333;color: #eee;}
+.green-section{background-color: #089DB0;color:#fff;padding: 100px;}
+.h1_center{text-align: center;}
+.wrapper{max-width: 1080px;margin:0 auto;}
+.green-section .hr{background-color: #078494}
+.hr{width:50%;height:2px;margin:20px auto;}
+.sub-heading{font-size: 18px;}
+.icon-group .icon{display: inline-block;width: 80px;height: 80px;background-color: 
+#8ddbcd;transform: rotate(45deg); margin: 20px;}
+.gray-section .img-section{width:45%;height: 398px;}/*11111*/
+.img-section img{width:100%;}
+.gray-section .text-section{width: 55%}
+.gray-section{background-color: #252f34;color: #fff;}
+.article-preview>div{float: left;}
+.text-section{float: left;background-color: #849a99;height: 398px;}
+.text-section h2{position: absolute; text-align: center;left: 950px;top: 1200px;}/*...*/
+.text-section p{position: absolute; text-align: center;left: 1254px;top: 1300px;}
+.text-section h5{position: absolute;left: 1150px;top:1400px;}
+.text-section .myLove{position: absolute;left: 1524px;}
+.purple-section{background-color: #3F3965;color:#fff;padding: 80px;}
+.sub-heading .card {height:295px;border:1px solid white; width: 40%;display: inline-block;position: relative;left: 160px;margin-top: 30px;
+margin-right: 20px;box-shadow: 0 0 10px #aaa;}
+
+.sub-heading .card .picture:hover{z-index: 99; transform: scale(1.4);transition: .3s transform;position: relative;}
+
+.sub-heading .card p{position: absolute;top: 0px;left: 205px;margin:0;white-space:pre-wrap;}
+/*.sub-heading .card .two{position: absolute;top: 0px;left: 220px;}*/
+.sub-heading .card .zhangzhenyue{position: absolute; top: 0;left:218px;}
+.main-wapper ul .nav-top li{font-size: 20px;left: 360px;}
+.main-wapper ul .nav-top .mySearch{margin-top: 13px;border-radius: 15px;outline: none;text-indent: 1em;}
+.quest:hover{background: blue;}
+.radio_one{margin-top: 200px;left: 100px;}
+#yes{margin-top: 20px;}
+
+.music_two{position: absolute;left: 1000px;}
+.musci_three{position:absolute; left: 360px;top: 140px; }
+footer #myA-one{text-decoration:none;}
+footer #myA-two{text-decoration:none;}
+footer #myA-three{text-decoration:none;}
+footer #myA-four{text-decoration:none;}
+ footer li{margin-left: 20px;}
+.text-section h4{text-align: center;}
+.text-section h2{margin-left: 50px;}
+footer{background-color: #333;color: #fff;}
+ul{margin: 0;min-height: 50px;text-align: center;}
+ul.share-group{display: block;	width:1080px;margin: 0 auto;padding: 50px;}
+.share-group li{display: inline-block;padding: 10px;}
+.copy{text-align: center;padding: 20px;}
+.panweibo{left: 200px;position: relative;}
+.main-wapper{background:#444  url(img/bg_two.jpg);background-size:cover;background-repeat: no-repeat;background-position: center center;background-attachment: fixed;}
+.myMoveVideo{position: fixed;bottom: 0;left: 0;width:200px;height: 200px;}
+.snow{position: fixed;pointer-events:none ;left: 0;top: 0;width:100%;height: 100%;background: url(img/雪花22.png),url(img/星星3.png);
+animation: 10s snow linear infinite;}
+.pic_background{background: blue;}
+.myFont{color: black;}
+@keyframes snow{
+	0%{
+		background-position: 0 0,0 0;
+	}
+	100%{
+		background-position: 500px 500px,1000px 500px;
+	}
+}
+
+
+
+@-moz-keyframes snow{
+	0%{
+		background-position: 0 0,0 0;
+	}
+	100%{
+		background-position: 500px 500px,1000px 500px;
+	}
+}
+
+@-webkit-keyframes snow{
+	0%{
+		background-position: 0 0,0 0;
+	}
+	100%{
+		background-position: 500px 500px,1000px 500px;
+	}
+
+
+
